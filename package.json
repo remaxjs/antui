@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "Wei Zhu <yesmeck@gmail.com>",
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@types/react": "^16.9.2",
     "gulp": "^4.0.2",
