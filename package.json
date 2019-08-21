@@ -1,0 +1,29 @@
+{
+  "name": "remax-antui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "build": "gulp",
+    "prepack": "npm run build"
+  },
+  "keywords": [],
+  "author": "Wei Zhu <yesmeck@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "gulp-typescript": "^5.0.1",
+    "less": "^3.10.2",
+    "react": "^16.9.0",
+    "remax": "^1.0.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "clsx": "^1.0.4"
+  }
+}
