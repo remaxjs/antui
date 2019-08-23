@@ -155,7 +155,7 @@ export default class Tabs extends React.Component<TabsProps, State> {
                         <Badge
                           className={clsx('am-tabs-bar-badge', { [tab.badgeType]: tab.badgeType })}
                           dot={tab.badgeType == 'dot'}
-                          text={tab.badgeText}
+                          text={tab.badgeText!}
                         />
                       )}
                     </View>
