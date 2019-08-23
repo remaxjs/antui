@@ -3,14 +3,14 @@ import { View, Text } from 'remax/alipay';
 import clsx from 'clsx';
 import './index.css';
 
-interface Props {
-  className: string;
-  overflowCount: number;
+interface BadgeProps {
+  className?: string;
+  overflowCount?: number;
   text: string | number;
-  dot: boolean;
+  dot?: boolean;
 }
 
-const Badge: React.FC<Props> = ({ children, className, text, dot = false, overflowCount }) => {
+const Badge: React.FC<BadgeProps> = ({ children, className, text, dot = false, overflowCount = 99 }) => {
   return (
     <View className={clsx('am-badge', className, { 'am-badge-not-a-wrapper': !children })}>
       {dot ? (

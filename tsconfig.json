@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "rootDir": "components",
     "declaration": true,
     "outDir": "lib"

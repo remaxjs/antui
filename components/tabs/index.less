@@ -1,0 +1,127 @@
+.am-tabs {
+  &-tab-bar-wrap {
+    width: 100%;
+  }
+
+  &-bar {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    height: 42PX;
+    display: flex;
+  }
+
+  &-scroll-left {
+    width: 36PX;
+    height: 39PX;
+    position: absolute;
+    top: 1PX;
+    left: 0;
+    z-index: 99;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0)) left no-repeat;
+    background-size: 100%;
+  }
+
+  &-scroll-right {
+    width: 36PX;
+    height: 39PX;
+    position: absolute;
+    top: 1PX;
+    right: 0;
+    z-index: 99;
+    background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0)) left no-repeat;
+    background-size: 100%;
+  }
+
+  &-plus-wrap {
+    display: none;
+    position: relative;
+    width: 24PX;
+    height: 43PX;
+  }
+
+  &-plus-wrap.show {
+    display: block;
+  }
+
+  &-plus {
+    position: absolute;
+    z-index: 100;
+    top: 4PX;
+    left: 0;
+    transform: translateX(-50%);
+    width: 32PX;
+    height: 32PX;
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/DObPgppwxyNHeejHANtu.png');
+    background-size: 16PX 16PX;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &-bar-content-wrap {
+    position: relative;
+    flex: 1;
+  }
+
+  &-bar-content {
+    width: 100%;
+    height: 50PX;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-bar-tab {
+    height: 42PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    flex-shrink: 0;
+    font-size: 16PX;
+  }
+
+  &-bar-title {
+    height: 42PX;
+    line-height: 42PX;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom-width: 2PX;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+  }
+
+  &-bar-badge.dot {
+    position: absolute;
+    top: 3PX;
+    right: 0;
+    transform: translateX(8PX);
+  }
+
+  &-bar-badge.text {
+    position: absolute;
+    top: 0;
+    right: 2PX;
+    transform: translateX(100%);
+    height: 16PX;
+  }
+
+  &-content-wrap {
+    margin-top: 1PX;
+    display: flex;
+    background: #fff;
+    flex-direction: row;
+    overflow: hidden;
+    height: auto;
+  }
+
+  &-content-wrap.fix {
+    height: auto !important;
+  }
+
+  &-slides {
+    display: flex;
+    transition-duration: 500ms;
+  }
+}
