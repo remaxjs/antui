@@ -26,8 +26,8 @@ export interface TabsProps {
   onPlusClick?: () => void;
   tabs: Array<{
     title: string;
-    badgeType: string;
-    badgeText: string;
+    badgeType?: string;
+    badgeText?: string;
   }>;
 }
 
