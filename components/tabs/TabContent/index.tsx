@@ -4,7 +4,7 @@ import './index.css';
 
 export interface TabContentProps {
   tabKey: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }
 
 const TabContent: React.FC<TabContentProps> = ({ tabKey, style = {}, children }) => {
