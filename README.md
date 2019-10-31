@@ -1,5 +1,7 @@
 # Mini AntUI
 
+**不再维护，Remax 已支持引用小程序自定义组件，详情参考 https://remaxjs.org/guide/custom-component**
+
 Port AntUI to Remax.
 
 https://github.com/ant-mini-program/mini-antui
